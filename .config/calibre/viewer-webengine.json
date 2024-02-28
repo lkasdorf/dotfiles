@@ -1,0 +1,79 @@
+{
+  "geometry-of-main_window_geometry": {
+    "frame_geometry": {
+      "height": 1053,
+      "width": 1920,
+      "x": 0,
+      "y": 27
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 1021,
+      "width": 1920,
+      "x": 0,
+      "y": 59
+    },
+    "maximized": true,
+    "normal_geometry": {
+      "height": 720,
+      "width": 640,
+      "x": 50,
+      "y": 109
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAAAAAAAGwAAB38AAAQ3AAAAMgAAAG0AAAKxAAADPAAAAAACAAAAB4AAAAAAAAAAOwAAB38AAAQ3"
+    },
+    "screen": {
+      "depth": 24,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920,
+        "x": 0,
+        "y": 0
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "HP Inc.",
+      "model": "HP M24f FHD",
+      "name": "DP-2-2",
+      "serial": "3CM2300J78   ",
+      "size_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920
+      },
+      "virtual_geometry": {
+        "height": 1080,
+        "width": 3840,
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  "main_window_state": {
+    "__class__": "bytearray",
+    "__value__": "AAAA/wAAAAH9AAAAAgAAAAAAAAAAAAAAAPwCAAAAAvsAAAAQAHQAbwBjAC0AZABvAGMAawAAAAAA/////wAAAIcA////+wAAABYAcwBlAGEAcgBjAGgALQBkAG8AYwBrAAAAAAD/////AAAAlQD///8AAAABAAAAAAAAAAD8AgAAAAT7AAAAFgBsAG8AbwBrAHUAcAAtAGQAbwBjAGsAAAAAAP////8AAAB9AP////sAAAAcAGIAbwBvAGsAbQBhAHIAawBzAC0AZABvAGMAawAAAAAA/////wAAAOcA////+wAAABwAaQBuAHMAcABlAGMAdABvAHIALQBkAG8AYwBrAAAAAAD/////AAAAEwD////7AAAAHgBoAGkAZwBoAGwAaQBnAGgAdABzAC0AZABvAGMAawAAAAAA/////wAAAMkA////AAAHgAAAA/0AAAAEAAAABAAAAAgAAAAI/AAAAAEAAAAAAAAAAQAAAB4AYQBjAHQAaQBvAG4AcwBfAHQAbwBvAGwAYgBhAHICAAAAAP////8AAAAAAAAAAA=="
+  },
+  "old_prefs_migrated": true,
+  "session_data": {
+    "controls_help_shown_count": 1,
+    "standalone_font_settings": {},
+    "standalone_misc_settings": {
+      "remember_last_read": true,
+      "remember_window_geometry": false,
+      "save_annotations_in_ebook": true,
+      "singleinstance": false
+    },
+    "standalone_recently_opened": [
+      {
+        "authors": [
+          "Thorsten Schulte und Dr. h. c. Michael Hesemann"
+        ],
+        "key": "/home/leon/DRIVE/SynologyDrive/12_ebooks_library/Thorsten Schulte und Dr. h. c. Michael Hesemann/Die grosse Tauschung (388)/Die grosse Tauschung - Thorsten Schulte und Dr. h. c. Michael Hes.epub",
+        "pathtoebook": "/home/leon/DRIVE/SynologyDrive/12_ebooks_library/Thorsten Schulte und Dr. h. c. Michael Hesemann/Die grosse Tauschung (388)/Die grosse Tauschung - Thorsten Schulte und Dr. h. c. Michael Hes.epub",
+        "timestamp": "2024-02-24T21:08:47.940Z",
+        "title": "Die große Täuschung"
+      }
+    ]
+  }
+}

@@ -1,0 +1,690 @@
+{
+  "action-layout-toolbar": [
+    "Add Books",
+    "Edit Metadata",
+    null,
+    "Convert Books",
+    "View",
+    null,
+    "Store",
+    "Donate",
+    "Fetch News",
+    "Help",
+    null,
+    "Preferences",
+    "Remove Books",
+    "Choose Library",
+    "Save To Disk",
+    "Connect Share",
+    "Tweak ePub",
+    "Obok DeDRM"
+  ],
+  "action-layout-toolbar-device": [
+    "Add Books",
+    "Edit Metadata",
+    null,
+    "Convert Books",
+    "View",
+    "Send To Device",
+    null,
+    null,
+    "Location Manager",
+    null,
+    null,
+    "Fetch News",
+    "Save To Disk",
+    "Store",
+    "Connect Share",
+    null,
+    "Remove Books",
+    null,
+    "Help",
+    "Preferences",
+    "Obok DeDRM"
+  ],
+  "ask_to_manage_device": [
+    "23078506,309f6556a5f145a28e3835115b2d0b7b"
+  ],
+  "book_details_splitter_horizontal_state": [
+    true,
+    200
+  ],
+  "book_list_pin_splitter_state": {
+    "__class__": "bytearray",
+    "__value__": "AAAA/wAAAAEAAAACAAABAAAAAEYA/////wEAAAABAA=="
+  },
+  "card_a_view books view state": {
+    "column_alignment": {
+      "size": "center",
+      "timestamp": "center"
+    },
+    "column_positions": {
+      "authors": 2,
+      "collections": 5,
+      "inlibrary": 0,
+      "size": 4,
+      "timestamp": 3,
+      "title": 1
+    },
+    "column_sizes": {
+      "authors": 96,
+      "collections": 107,
+      "inlibrary": 98,
+      "size": 57,
+      "timestamp": 73,
+      "title": 59
+    },
+    "formats_injected": true,
+    "hidden_columns": [],
+    "id_injected": true,
+    "languages_injected": true,
+    "last_modified_injected": true,
+    "path_injected": true,
+    "sort_history": [
+      [
+        "timestamp",
+        false
+      ],
+      [
+        "inlibrary",
+        false
+      ],
+      [
+        "timestamp",
+        false
+      ],
+      [
+        "inlibrary",
+        false
+      ],
+      [
+        "timestamp",
+        false
+      ],
+      [
+        "inlibrary",
+        false
+      ],
+      [
+        "timestamp",
+        false
+      ]
+    ]
+  },
+  "card_b_view books view state": {
+    "column_alignment": {
+      "size": "center",
+      "timestamp": "center"
+    },
+    "column_positions": {
+      "authors": 2,
+      "collections": 5,
+      "inlibrary": 0,
+      "size": 4,
+      "timestamp": 3,
+      "title": 1
+    },
+    "column_sizes": {
+      "authors": 96,
+      "collections": 107,
+      "inlibrary": 98,
+      "size": 57,
+      "timestamp": 73,
+      "title": 59
+    },
+    "formats_injected": true,
+    "hidden_columns": [],
+    "id_injected": true,
+    "languages_injected": true,
+    "last_modified_injected": true,
+    "path_injected": true,
+    "sort_history": [
+      [
+        "timestamp",
+        false
+      ],
+      [
+        "inlibrary",
+        false
+      ],
+      [
+        "timestamp",
+        false
+      ],
+      [
+        "inlibrary",
+        false
+      ],
+      [
+        "timestamp",
+        false
+      ],
+      [
+        "inlibrary",
+        false
+      ],
+      [
+        "timestamp",
+        false
+      ]
+    ]
+  },
+  "choose_icon_theme_initial_tab": 2,
+  "color_palette": "dark",
+  "cover_browser_splitter_vertical_state": [
+    false,
+    300
+  ],
+  "cover_grid_color": [
+    80,
+    80,
+    80
+  ],
+  "cover_grid_texture": null,
+  "custom_colors_for_color_dialog": [
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ]
+  ],
+  "dark_palette_name": "",
+  "dark_palettes": {
+    "__current__": {
+      "AlternateBase": "#2d2d2d",
+      "Base": "#121212",
+      "BrightText": "#ff0000",
+      "Button": "#2d2d2d",
+      "ButtonText": "#dddddd",
+      "Highlight": "#0b45c4",
+      "HighlightedText": "#dddddd",
+      "Link": "#6cb4ee",
+      "LinkVisited": "#800080",
+      "PlaceholderText": "#7f7f7f",
+      "Text": "#dddddd",
+      "ToolTipBase": "#2d2d2d",
+      "ToolTipText": "#dddddd",
+      "Window": "#2d2d2d",
+      "WindowText": "#dddddd"
+    }
+  },
+  "default_author_link": null,
+  "geometry-of-calibre_main_window_geometry": {
+    "frame_geometry": {
+      "height": 1053,
+      "width": 1920,
+      "x": 0,
+      "y": 27
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 1021,
+      "width": 1920,
+      "x": 0,
+      "y": 59
+    },
+    "maximized": true,
+    "normal_geometry": {
+      "height": 1021,
+      "width": 1920,
+      "x": 0,
+      "y": 59
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAAAAAAAGwAAB38AAAQ3AAAAAAAAADsAAAd/AAAENwAAAAACAAAAB4AAAAAAAAAAOwAAB38AAAQ3"
+    },
+    "screen": {
+      "depth": 24,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920,
+        "x": 0,
+        "y": 0
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "HP Inc.",
+      "model": "HP M24f FHD",
+      "name": "DP-2-2",
+      "serial": "3CM2300J78   ",
+      "size_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920
+      },
+      "virtual_geometry": {
+        "height": 1080,
+        "width": 3840,
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  "geometry-of-choose-icon-theme-dialog-geometry": {
+    "frame_geometry": {
+      "height": 1037,
+      "width": 900,
+      "x": 500,
+      "y": 28
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 1005,
+      "width": 900,
+      "x": 500,
+      "y": 60
+    },
+    "maximized": false,
+    "normal_geometry": {
+      "height": 1005,
+      "width": 900,
+      "x": 500,
+      "y": 60
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAH0AAAAHAAABXcAAAQoAAAB9AAAADwAAAV3AAAEKAAAAAAAAAAAB4AAAAH0AAAAPAAABXcAAAQo"
+    },
+    "screen": {
+      "depth": 24,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920,
+        "x": 0,
+        "y": 0
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "HP Inc.",
+      "model": "HP M24f FHD",
+      "name": "DP-2-2",
+      "serial": "3CM2300J78   ",
+      "size_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920
+      },
+      "virtual_geometry": {
+        "height": 1080,
+        "width": 3840,
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  "geometry-of-customize-palette-geometry": {
+    "frame_geometry": {
+      "height": 555,
+      "width": 826,
+      "x": 426,
+      "y": 220
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 555,
+      "width": 826,
+      "x": 426,
+      "y": 220
+    },
+    "maximized": false,
+    "normal_geometry": {
+      "height": 555,
+      "width": 826,
+      "x": 426,
+      "y": 220
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAGqAAAA3AAABOMAAAMGAAABqgAAANwAAATjAAADBgAAAAAAAAAAB4AAAAGqAAAA3AAABOMAAAMG"
+    },
+    "screen": {
+      "depth": 24,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920,
+        "x": 0,
+        "y": 0
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "HP Inc.",
+      "model": "HP M24f FHD",
+      "name": "DP-2-2",
+      "serial": "3CM2300J78   ",
+      "size_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920
+      },
+      "virtual_geometry": {
+        "height": 1080,
+        "width": 3840,
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  "geometry-of-jobs_dialog_geometry": {
+    "frame_geometry": {
+      "height": 334,
+      "width": 384,
+      "x": 758,
+      "y": 363
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 334,
+      "width": 384,
+      "x": 758,
+      "y": 363
+    },
+    "maximized": false,
+    "normal_geometry": {
+      "height": 334,
+      "width": 384,
+      "x": 758,
+      "y": 363
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAL2AAABawAABHUAAAK4AAAC9gAAAWsAAAR1AAACuAAAAAAAAAAAB4AAAAL2AAABawAABHUAAAK4"
+    },
+    "screen": {
+      "depth": 24,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920,
+        "x": 0,
+        "y": 0
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "HP Inc.",
+      "model": "HP M24f FHD",
+      "name": "DP-2-2",
+      "serial": "3CM2300J78   ",
+      "size_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920
+      },
+      "virtual_geometry": {
+        "height": 1080,
+        "width": 3840,
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  "geometry-of-preferences dialog geometry": {
+    "frame_geometry": {
+      "height": 752,
+      "width": 930,
+      "x": 384,
+      "y": 145
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 720,
+      "width": 930,
+      "x": 384,
+      "y": 177
+    },
+    "maximized": false,
+    "normal_geometry": {
+      "height": 720,
+      "width": 930,
+      "x": 384,
+      "y": 177
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAGAAAAAkQAABSEAAAOAAAABgAAAALEAAAUhAAADgAAAAAAAAAAAB4AAAAGAAAAAsQAABSEAAAOA"
+    },
+    "screen": {
+      "depth": 24,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920,
+        "x": 0,
+        "y": 0
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "HP Inc.",
+      "model": "HP M24f FHD",
+      "name": "DP-2-2",
+      "serial": "3CM2300J78   ",
+      "size_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920
+      },
+      "virtual_geometry": {
+        "height": 1080,
+        "width": 3840,
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  "grid view visible": false,
+  "jobs view column layout3": {
+    "__class__": "bytearray",
+    "__value__": "AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfQAAAAFAQEBAAAAAAAAAAAAAAAAAGT/////AAAAhAAAAAAAAAAFAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAAZAAAAAEAAAAAAAAD6AAAAAAAAAAAAA=="
+  },
+  "library_usage_stats": {
+    "/home/leon/Calibre Library": 4,
+    "/home/leon/DRIVE/SynologyDrive/12_ebooks_library": 8
+  },
+  "light_palette_name": "",
+  "light_palettes": {
+    "__current__": {
+      "AlternateBase": "#f5f5f5",
+      "Base": "#ffffff",
+      "BrightText": "#ff0000",
+      "Button": "#f0f0f0",
+      "ButtonText": "#000000",
+      "Highlight": "#308cc6",
+      "HighlightedText": "#ffffff",
+      "Link": "#0000ff",
+      "LinkVisited": "#ff00ff",
+      "PlaceholderText": "#787878",
+      "Text": "#000000",
+      "ToolTipBase": "#f0f0f0",
+      "ToolTipText": "#000000",
+      "Window": "#f0f0f0",
+      "WindowText": "#000000"
+    }
+  },
+  "main_window_central_widget_state": {
+    "layout": "wide",
+    "narrow_desires": {
+      "book_details_height": 0.23076923076923078,
+      "cover_browser_width": 0.35,
+      "quick_view_height": 0.25614591593973035,
+      "tag_browser_width": 0.25
+    },
+    "narrow_visibility": {
+      "book_details": true,
+      "book_list": true,
+      "cover_browser": false,
+      "quick_view": false,
+      "tag_browser": true
+    },
+    "wide_desires": {
+      "book_details_width": 0.10416666666666667,
+      "cover_browser_height": 0.23622047244094488,
+      "quick_view_height": 0.2543307086614173,
+      "tag_browser_width": 0.10416666666666667
+    },
+    "wide_visibility": {
+      "book_details": true,
+      "book_list": true,
+      "cover_browser": false,
+      "quick_view": false,
+      "tag_browser": true
+    }
+  },
+  "memory_view books view state": {
+    "column_alignment": {
+      "size": "center",
+      "timestamp": "center"
+    },
+    "column_positions": {
+      "authors": 2,
+      "collections": 5,
+      "inlibrary": 0,
+      "size": 4,
+      "timestamp": 3,
+      "title": 1
+    },
+    "column_sizes": {
+      "authors": 350,
+      "collections": 107,
+      "inlibrary": 98,
+      "size": 65,
+      "timestamp": 102,
+      "title": 350
+    },
+    "formats_injected": true,
+    "hidden_columns": [],
+    "id_injected": true,
+    "languages_injected": true,
+    "last_modified_injected": true,
+    "path_injected": true,
+    "sort_history": [
+      [
+        "timestamp",
+        false
+      ],
+      [
+        "inlibrary",
+        false
+      ],
+      [
+        "timestamp",
+        false
+      ],
+      [
+        "inlibrary",
+        false
+      ],
+      [
+        "timestamp",
+        false
+      ],
+      [
+        "inlibrary",
+        false
+      ],
+      [
+        "timestamp",
+        false
+      ]
+    ]
+  },
+  "quick_start_guide_added": true,
+  "quickview visible": false,
+  "search bar visible": true,
+  "show_emblems": false,
+  "tag browser search box visible": false,
+  "tag_browser_splitter_horizontal_state": [
+    true,
+    200
+  ],
+  "tb_search_order": {
+    "0": 1,
+    "1": 2,
+    "2": 3,
+    "3": 4,
+    "4": 0
+  }
+}

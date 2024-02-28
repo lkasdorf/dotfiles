@@ -1,0 +1,22 @@
+{
+  "add a plugin dialog": "/home/leon/Downloads/DeDRM_tools_10.0.9",
+  "add books dialog dir": "/home/leon/DRIVE/SynologyDrive/11_ebooks",
+  "add books dialog dir-last-used-filter-spec-all-files": false,
+  "catalogs_to_be_synced": {
+    "__class__": "set",
+    "__value__": []
+  },
+  "database location dialog": "/home/leon/DRIVE/SynologyDrive/12_ebooks_library",
+  "sort_history": [
+    [
+      "timestamp",
+      false
+    ],
+    [
+      "timestamp",
+      false
+    ]
+  ],
+  "welcome_wizard_device": "default",
+  "welcome_wizard_was_run": true
+}
