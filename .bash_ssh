@@ -1,5 +1,0 @@
-alias ssh-pivpn='ssh pi@192.168.178.48' #twingate has to be started
-alias ssh-pigeza='ssh pi@192.168.223.3' #Pi Geza
-
-# linode servers 
-alias ssh-ubuntutest='ssh root@173.230.135.195'
