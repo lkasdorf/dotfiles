@@ -1,0 +1,30 @@
+ 
+======================================================
+===   Citrix Auth Manager - Logging starting
+======================================================
+
+
+
+Time: Thu  9 Nov 2023 21:30:48 UTC
+LocalTime: Thu  9 Nov 2023 21:30:48
+Type: Information
+Module: Citrix Authentication Manager
+Location: /opt/Citrix/ICAClient/AuthManagerDaemon
+Version: ...SF. (Release)
+Platform: Linux
+Description: Citrix Authentication Manager starting.
+
+Time: Thu  9 Nov 2023 21:30:50 UTC
+LocalTime: Thu  9 Nov 2023 21:30:50
+Type: Warning
+Module: Citrix Authentication Manager
+Location: /opt/Citrix/ICAClient/AuthManagerDaemon
+Version: ...SF. (Release)
+Platform: Linux
+Description: There was a problem accessing the HTTP server.
+Exception type: HTTP exception
+Detail: Gateway connectivity was indicated, but the resource did not have an associated gateway; server URL: 'https-url-withheld'
+Context:
+	CAuthHttpRequestImpl::SendAndReceive
+
+URLs have been stripped from this log message. To allow URLs in the log, set the logging mode to 'verbose'.

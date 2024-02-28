@@ -1,0 +1,15 @@
+ 
+======================================================
+===   Citrix Auth Manager - Logging starting
+======================================================
+
+
+
+Time: Tue 14 Nov 2023 11:10:44 UTC
+LocalTime: Tue 14 Nov 2023 11:10:44
+Type: Information
+Module: Citrix Authentication Manager
+Location: /opt/Citrix/ICAClient/AuthManagerDaemon
+Version: ...SF. (Release)
+Platform: Linux
+Description: Citrix Authentication Manager starting.

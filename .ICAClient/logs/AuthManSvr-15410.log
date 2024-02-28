@@ -1,0 +1,386 @@
+===========================================
+Starting tracing
+
+AuthManSvr Version: ...SF. (Release)
+
+Platform: Linux
+
+Time now: Thu  9 Nov 2023 21:30:48 UTC
+
+Local time now: Thu  9 Nov 2023 21:30:48
+
+Module: /opt/Citrix/ICAClient/AuthManagerDaemon
+
+Module start time: Thu  9 Nov 2023 21:30:48 UTC
+
+Module start local time: Thu  9 Nov 2023 21:30:48
+
+===========================================
+Thu  9 Nov 2023 21:30:48     > T:8E94A780 main   Configuration:
+Thu  9 Nov 2023 21:30:48     > T:8E94A780 main   {
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .   TracingEnabled=true
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .   LoggingMode=normal
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .   RequestSecondaryTokenLifetimeDHMS=0.01:00:00
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .   RequestPrimaryTokenLifetimeDHMS=0.20:00:00
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .   MinimumRefreshIntervalDHMS=0.00:10:00
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .   RefreshRetryIntervalDHMS=0.00:10:00
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .   RefreshMode=on
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .   RefreshAtTokenLifetimePercentage=50
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .   ServerTerminationMode=never
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .   SavePasswordMode=never
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .   ConnectionSecurityMode=secureonly
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .   UIMode=normal
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .   MaxChallengeChainDepth=5
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .   MaxPrepareCallCount=6
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .   Guid=
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .   DesktopLogoffMode=logoffserver
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .   CertificateCrlCheckMode=none
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .   CertificateCheckMode=normal
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .   Locale=
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .   MaxUrlTableSize=10
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .   UIInactivityTimeout=0.00:02:00
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .   EpaScanAllowed=false
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .   SoftTokenIntegrationAllowed=false
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .   RememberUsername=false
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .   VpnGatewayOverride=empty
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .   VpnCapabilityOverride=none
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .   CertificateSelectionMode=prompt
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .   SmartCardPINEntry=authmanager
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .   SmartCardRemovalAction=noaction
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .   AllowAgeeForms=true
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .   CertificateStoreOverrideForDiagnostics=
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .   PermittedIssuerForDiagnostics=
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .   BlockTimingEnabled=0
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .   AuthServiceTimeoutSecs=0
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .   FailedWpadBypassIntervalDHMS=0.00:01:00
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .   ProxyEnabled=true
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .   CeipSyncIntervalDHMS=0.01:00:00
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .   ServiceRecordForCloudStoreEnabled=false
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .   ProtocolOrder=httpbasic, integratedwindows, CitrixAGBasic, CitrixAGBasicNoPassword, Certificate, customforms, formsvariant, explicitforms
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .   Protocol=ag
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       Name=ag
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       Enabled=true
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       RequiredConnectivity=unknown
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       IsPlugin=false
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       ProcessModel=InProcess
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       FallbackOnError=never
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .   Protocol=aglegacy
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       Name=aglegacy
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       Enabled=true
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       RequiredConnectivity=unknown
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       IsPlugin=false
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       ProcessModel=OutOfprocess
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       FallbackOnError=never
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .   Protocol=aglegacyclientcert
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       Name=aglegacyclientcert
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       Enabled=true
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       RequiredConnectivity=unknown
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       IsPlugin=false
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       ProcessModel=InProcess
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       FallbackOnError=never
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .   Protocol=Certificate
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       Name=Certificate
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       Enabled=true
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       RequiredConnectivity=direct
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       IsPlugin=false
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       ProcessModel=InProcess
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       FallbackOnError=UserSwitchedProtocol UnsuitableProtocol
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .   Protocol=CitrixAGBasic
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       Name=CitrixAGBasic
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       Enabled=true
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       RequiredConnectivity=gateway
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       IsPlugin=false
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       ProcessModel=InProcess
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       FallbackOnError=UnsuitableProtocol
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .   Protocol=CitrixAGBasicNoPassword
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       Name=CitrixAGBasicNoPassword
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       Enabled=true
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       RequiredConnectivity=gateway
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       IsPlugin=false
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       ProcessModel=InProcess
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       FallbackOnError=UnsuitableProtocol
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .   Protocol=customforms
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       Name=customforms
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       Enabled=true
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       RequiredConnectivity=any
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       IsPlugin=false
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       ProcessModel=InProcess
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       FallbackOnError=never
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .   Protocol=explicitforms
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       Name=explicitforms
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       Enabled=true
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       RequiredConnectivity=any
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       IsPlugin=false
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       ProcessModel=InProcess
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       FallbackOnError=never
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .   Protocol=formsvariant
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       Name=formsvariant
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       Enabled=true
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       RequiredConnectivity=any
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       IsPlugin=false
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       ProcessModel=InProcess
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       FallbackOnError=never
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .   Protocol=httpbasic
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       Name=httpbasic
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       Enabled=false
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       RequiredConnectivity=direct
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       IsPlugin=false
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       ProcessModel=InProcess
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       FallbackOnError=UnsuitableProtocol
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .   Protocol=integratedwindows
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       Name=integratedwindows
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       Enabled=true
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       RequiredConnectivity=direct
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       IsPlugin=false
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       ProcessModel=InProcess
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       SSONCheckEnabled=true
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       FallbackOnError=UnsuitableProtocol
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .   
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .   Auth Form Plugin Configuration:
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .       No plugin configuration found
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .   PreferredCryptoApi=CNG
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .   SessionTypeOverride=empty
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .   PKCS11module=
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .   
+Thu  9 Nov 2023 21:30:48     < T:8E94A780 main   }
+Thu  9 Nov 2023 21:30:48     > T:8E94A780 main   static void AM::Utilities::CLinuxDependencies::InitializeCoreDependencies()
+Thu  9 Nov 2023 21:30:48     > T:8E94A780 main   {
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .   CAMSSLContextTracker created.
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .   AM::CLinuxSSLContext::CLinuxSSLContext(const AM::Networking::CXUrl&)
+Thu  9 Nov 2023 21:30:48     < T:8E94A780 main   }
+Thu  9 Nov 2023 21:30:48     > T:8E94A780 main   CLinuxSSOn::CLinuxSSOn
+Thu  9 Nov 2023 21:30:48     > T:8E94A780 main   {
+Thu  9 Nov 2023 21:30:48     > T:8E94A780 main   .   CLinuxSSOn::InitializeListener
+Thu  9 Nov 2023 21:30:48     > T:8E94A780 main   .   {
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .   .   Successfully created the SSOn named pipe: /home/leon/.ICAClient/.tmp/.AuthManagerSSOnPipe.request
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .   .   Successfully created the SSOn named pipe: /home/leon/.ICAClient/.tmp/.AuthManagerSSOnPipe.response
+Thu  9 Nov 2023 21:30:48     < T:8E94A780 main   .   }
+Thu  9 Nov 2023 21:30:48     < T:8E94A780 main   }
+Thu  9 Nov 2023 21:30:48     > T:8E94A780 main    initSmartCard=true
+Thu  9 Nov 2023 21:30:48     > T:8E94A780 main   {
+Thu  9 Nov 2023 21:30:48     > T:8178E640 SSOn   CLinuxSSOn::Listener
+Thu  9 Nov 2023 21:30:48     > T:8178E640 SSOn   {
+Thu  9 Nov 2023 21:30:48       T:8178E640 SSOn   .   Listener started
+Thu  9 Nov 2023 21:30:48     > T:8E94A780 main   .   AM::CLinuxSmartCardEventMonitor::CLinuxSmartCardEventMonitor()
+Thu  9 Nov 2023 21:30:48     > T:8E94A780 main   .   {
+Thu  9 Nov 2023 21:30:48     < T:8E94A780 main   .   }
+Thu  9 Nov 2023 21:30:48     > T:8E94A780 main   .   CLinuxSmartCardManager::CLinuxSmartCardManager
+Thu  9 Nov 2023 21:30:48     > T:8E94A780 main   .   {
+Thu  9 Nov 2023 21:30:48     > T:8E94A780 main   .   .   CSmartCardEventMonitorBase::Register
+Thu  9 Nov 2023 21:30:48     > T:8E94A780 main   .   .   {
+Thu  9 Nov 2023 21:30:48     > T:8E94A780 main   .   .   .   CSmartCardEventMonitorBase::FireStateChangedEvent
+Thu  9 Nov 2023 21:30:48     > T:8E94A780 main   .   .   .   {
+Thu  9 Nov 2023 21:30:48     > T:8E94A780 main   .   .   .   .   CLinuxSmartCardManager::ReaderStatesChanged
+Thu  9 Nov 2023 21:30:48     > T:8E94A780 main   .   .   .   .   {
+Thu  9 Nov 2023 21:30:48     < T:8E94A780 main   .   .   .   .   }
+Thu  9 Nov 2023 21:30:48     < T:8E94A780 main   .   .   .   }
+Thu  9 Nov 2023 21:30:48     < T:8E94A780 main   .   .   }
+Thu  9 Nov 2023 21:30:48     < T:8E94A780 main   .   }
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .   PKCS11 module not specified in the config file, looking for the fallback one in the system...
+Thu  9 Nov 2023 21:30:48       T:8E94A780 main   .   Fallback PKCS11 module opensc-pkcs11.so not found in the system
+Thu  9 Nov 2023 21:30:48     < T:8E94A780 main   }
+Thu  9 Nov 2023 21:30:48 *LOG* T:8E94A780 main   Module: Citrix Authentication Manager
+Thu  9 Nov 2023 21:30:48 *LOG* T:8E94A780 main   Location: /opt/Citrix/ICAClient/AuthManagerDaemon
+Thu  9 Nov 2023 21:30:48 *LOG* T:8E94A780 main   Version: ...SF. (Release)
+Thu  9 Nov 2023 21:30:48 *LOG* T:8E94A780 main   Platform: Linux
+Thu  9 Nov 2023 21:30:48 *LOG* T:8E94A780 main   Description: Citrix Authentication Manager starting.
+Thu  9 Nov 2023 21:30:48     > T:8E94A780 main   CLinuxServiceRecordConnector::CLinuxServiceRecordConnector
+Thu  9 Nov 2023 21:30:48     > T:8E94A780 main   {
+Thu  9 Nov 2023 21:30:48     < T:8E94A780 main   }
+Thu  9 Nov 2023 21:30:48     > T:8E94A780 main   CSmartCardRemovalPolicyEnforcer::Start
+Thu  9 Nov 2023 21:30:48     > T:8E94A780 main   {
+Thu  9 Nov 2023 21:30:48     > T:8E94A780 main   .   CSmartCardEventMonitorBase::Register
+Thu  9 Nov 2023 21:30:48     > T:8E94A780 main   .   {
+Thu  9 Nov 2023 21:30:48     > T:8E94A780 main   .   .   CSmartCardEventMonitorBase::FireStateChangedEvent
+Thu  9 Nov 2023 21:30:48     > T:8E94A780 main   .   .   {
+Thu  9 Nov 2023 21:30:48     > T:8E94A780 main   .   .   .   CSmartCardRemovalPolicyEnforcer::ReaderStatesChanged
+Thu  9 Nov 2023 21:30:48     > T:8E94A780 main   .   .   .   {
+Thu  9 Nov 2023 21:30:48     < T:8E94A780 main   .   .   .   }
+Thu  9 Nov 2023 21:30:48     < T:8E94A780 main   .   .   }
+Thu  9 Nov 2023 21:30:48     < T:8E94A780 main   .   }
+Thu  9 Nov 2023 21:30:48     < T:8E94A780 main   }
+Thu  9 Nov 2023 21:30:48     > T:8E94A780 main   CSmartCardEventMonitorBase::Start
+Thu  9 Nov 2023 21:30:48     > T:8E94A780 main   {
+Thu  9 Nov 2023 21:30:48     > T:8E94A780 main   .   CLinuxSmartCardEventMonitor::InitializeMonitor
+Thu  9 Nov 2023 21:30:48     > T:8E94A780 main   .   {
+Thu  9 Nov 2023 21:30:48     < T:8E94A780 main   .   }
+Thu  9 Nov 2023 21:30:48     < T:8E94A780 main   }
+Thu  9 Nov 2023 21:30:48       T:737FE640        Server: Successfully created ListenPipe: /home/leon/.ICAClient/.tmp/.AuthManagerListnerPipe
+Thu  9 Nov 2023 21:30:48       T:737FE640        Successfully changed permission of Listenerpipe : /home/leon/.ICAClient/.tmp/.AuthManagerListnerPipe
+Thu  9 Nov 2023 21:30:48       T:737FE640        Server: Opened fifo : /home/leon/.ICAClient/.tmp/.AuthManagerListnerPipe
+Thu  9 Nov 2023 21:30:48     > T:73FFF640 SmrtCd CLinuxSmartCardEventMonitor::Monitor
+Thu  9 Nov 2023 21:30:48     > T:73FFF640 SmrtCd {
+Thu  9 Nov 2023 21:30:48     > T:73FFF640 SmrtCd .   CLinuxSmartCardEventMonitor::InitialiseAndMonitorSmartCards
+Thu  9 Nov 2023 21:30:48     > T:73FFF640 SmrtCd .   {
+Thu  9 Nov 2023 21:30:48       T:73FFF640 SmrtCd .   .   No SSLSDK object. Maybe no PKCS#11 module is specified.
+Thu  9 Nov 2023 21:30:48     < T:73FFF640 SmrtCd .   }
+Thu  9 Nov 2023 21:30:48     < T:73FFF640 SmrtCd }
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        LinuxAuthManSvr::initialize
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        {
+Thu  9 Nov 2023 21:30:49     < T:72FFD640        }
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        LinuxAuthManSvr::createConnectionWithName
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        {
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        .   CAuthManImpl::CAuthManImpl
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        .   {
+Thu  9 Nov 2023 21:30:49       T:72FFD640        .   .   Created authman#1
+Thu  9 Nov 2023 21:30:49     < T:72FFD640        .   }
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        .   LinuxAuthMan constructor Starting
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        .   {
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        .   .   LinuxAuthMan setClientName() object authman#1
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        .   .   {
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        .   .   .   CAuthManImpl::SetClientName clientName='LinuxAuthMan'
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        .   .   .   {
+Thu  9 Nov 2023 21:30:49     < T:72FFD640        .   .   .   }
+Thu  9 Nov 2023 21:30:49     < T:72FFD640        .   .   }
+Thu  9 Nov 2023 21:30:49     < T:72FFD640        .   }
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        .   LinuxAuthMan setClientName() object authman#1
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        .   {
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        .   .   CAuthManImpl::SetClientName clientName='LinuxClient'
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        .   .   {
+Thu  9 Nov 2023 21:30:49     < T:72FFD640        .   .   }
+Thu  9 Nov 2023 21:30:49     < T:72FFD640        .   }
+Thu  9 Nov 2023 21:30:49       T:72FFD640        .   AuthMan Connection Handle : 1
+Thu  9 Nov 2023 21:30:49     < T:72FFD640        }
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        CitrixAuthManagerSDK::AMResult CitrixAuthManagerSDK::SDKServerCommLib::HandleCreateAMHttpRequest()
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        {
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        .   CitrixAuthManagerSDK::AMResult CitrixAuthManagerSDK::LinuxAuthManSvr::createAuthHttpRequest(CitrixAuthManagerSDK::ConnectionHandle, CitrixAuthManagerSDK::AMHttpHandle*)
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        .   {
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        .   .   LinuxAuthMan createAuthHttpRequest() client=LinuxClient object=authman#1
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        .   .   {
+Thu  9 Nov 2023 21:30:49       T:72FFD640        .   .   .   Created AuthHttpRequest#1
+Thu  9 Nov 2023 21:30:49     < T:72FFD640        .   .   }
+Thu  9 Nov 2023 21:30:49     < T:72FFD640        .   }
+Thu  9 Nov 2023 21:30:49     < T:72FFD640        }
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        CitrixAuthManagerSDK::AMResult CitrixAuthManagerSDK::SDKServerCommLib::HandleSetRequestUserAgentSuffix()
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        {
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        .   CitrixAuthManagerSDK::AMResult CitrixAuthManagerSDK::LinuxAuthManSvr::SetUserAgentSuffix(CitrixAuthManagerSDK::AMHttpHandle, const wstring&)
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        .   {
+Thu  9 Nov 2023 21:30:49       T:72FFD640        .   .   CAuthHttpRequestImpl::SetUserAgentSuffix("CWA/23.9.0.24")
+Thu  9 Nov 2023 21:30:49     < T:72FFD640        .   }
+Thu  9 Nov 2023 21:30:49     < T:72FFD640        }
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        CitrixAuthManagerSDK::AMResult CitrixAuthManagerSDK::SDKServerCommLib::HandleSetRequestAuthenticationFlags()
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        {
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        .   CitrixAuthManagerSDK::AMResult CitrixAuthManagerSDK::LinuxAuthManSvr::SetAuthenticationFlags(CitrixAuthManagerSDK::AMHttpHandle, unsigned int)
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        .   {
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        .   .   CAuthHttpRequestImpl::SetAuthenticationFlags(3)
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        .   .   {
+Thu  9 Nov 2023 21:30:49     < T:72FFD640        .   .   }
+Thu  9 Nov 2023 21:30:49     < T:72FFD640        .   }
+Thu  9 Nov 2023 21:30:49     < T:72FFD640        }
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        CitrixAuthManagerSDK::AMResult CitrixAuthManagerSDK::SDKServerCommLib::HandleSetRequestUrl()
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        {
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        .   CitrixAuthManagerSDK::AMResult CitrixAuthManagerSDK::LinuxAuthManSvr::SetUrl(CitrixAuthManagerSDK::AMHttpHandle, const wstring&)
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        .   {
+Thu  9 Nov 2023 21:30:49       T:72FFD640        .   .   CAuthHttpRequestImpl::SetUrl("https://storefront.rku.net/Citrix/OTPAuth/resources/v2/subscriptions/Q29udHJvbGxlci4wMDEgcmt1LWl0IERlc2t0b3AgMjAxOSAkUzU3LTI0Mg--")
+Thu  9 Nov 2023 21:30:49     < T:72FFD640        .   }
+Thu  9 Nov 2023 21:30:49     < T:72FFD640        }
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        CitrixAuthManagerSDK::AMResult CitrixAuthManagerSDK::SDKServerCommLib::HandleAddRequestHeader()
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        {
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        .   CitrixAuthManagerSDK::AMResult CitrixAuthManagerSDK::LinuxAuthManSvr::AddHeader(CitrixAuthManagerSDK::AMHttpHandle, const wstring&)
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        .   {
+Thu  9 Nov 2023 21:30:49       T:72FFD640        .   .   CAuthHttpRequestImpl::AddHeader("Content-Type: application/vnd.citrix.subscriptionupdate+xml")
+Thu  9 Nov 2023 21:30:49     < T:72FFD640        .   }
+Thu  9 Nov 2023 21:30:49     < T:72FFD640        }
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        CitrixAuthManagerSDK::AMResult CitrixAuthManagerSDK::SDKServerCommLib::HandleAddRequestHeader()
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        {
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        .   CitrixAuthManagerSDK::AMResult CitrixAuthManagerSDK::LinuxAuthManSvr::AddHeader(CitrixAuthManagerSDK::AMHttpHandle, const wstring&)
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        .   {
+Thu  9 Nov 2023 21:30:49       T:72FFD640        .   .   CAuthHttpRequestImpl::AddHeader("X-Citrix-AppProtection-Capable: TRUE")
+Thu  9 Nov 2023 21:30:49     < T:72FFD640        .   }
+Thu  9 Nov 2023 21:30:49     < T:72FFD640        }
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        CitrixAuthManagerSDK::AMResult CitrixAuthManagerSDK::SDKServerCommLib::HandleAddRequestHeader()
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        {
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        .   CitrixAuthManagerSDK::AMResult CitrixAuthManagerSDK::LinuxAuthManSvr::AddHeader(CitrixAuthManagerSDK::AMHttpHandle, const wstring&)
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        .   {
+Thu  9 Nov 2023 21:30:49       T:72FFD640        .   .   CAuthHttpRequestImpl::AddHeader("Citrix-TransactionId: ")
+Thu  9 Nov 2023 21:30:49     < T:72FFD640        .   }
+Thu  9 Nov 2023 21:30:49     < T:72FFD640        }
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        CitrixAuthManagerSDK::AMResult CitrixAuthManagerSDK::SDKServerCommLib::HandleSetRequestData()
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        {
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        .   CitrixAuthManagerSDK::AMResult CitrixAuthManagerSDK::LinuxAuthManSvr::SetBody(CitrixAuthManagerSDK::AMHttpHandle, ByteVectorSptr)
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        .   {
+Thu  9 Nov 2023 21:30:49       T:72FFD640        .   .   CAuthHttpRequestImpl::SetBody(548 bytes)
+Thu  9 Nov 2023 21:30:49     < T:72FFD640        .   }
+Thu  9 Nov 2023 21:30:49     < T:72FFD640        }
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        CitrixAuthManagerSDK::AMResult CitrixAuthManagerSDK::SDKServerCommLib::HandleSetRequestMethod()
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        {
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        .   CitrixAuthManagerSDK::AMResult CitrixAuthManagerSDK::LinuxAuthManSvr::SetMethod(CitrixAuthManagerSDK::AMHttpHandle, const wstring&)
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        .   {
+Thu  9 Nov 2023 21:30:49       T:72FFD640        .   .   CAuthHttpRequestImpl::SetMethod("POST")
+Thu  9 Nov 2023 21:30:49     < T:72FFD640        .   }
+Thu  9 Nov 2023 21:30:49     < T:72FFD640        }
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        CitrixAuthManagerSDK::AMResult CitrixAuthManagerSDK::SDKServerCommLib::HandleSendRequestAndReceiveResponse()
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        {
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        .   CitrixAuthManagerSDK::AMResult CitrixAuthManagerSDK::LinuxAuthManSvr::SendAndReceive(CitrixAuthManagerSDK::AMHttpHandle)
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        .   {
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        .   .   CAuthHttpRequestImpl::SendAndReceive
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        .   .   {
+Thu  9 Nov 2023 21:30:49       T:72FFD640        .   .   .   ITokenCaches::UpdateFlagsMode flags=3
+Thu  9 Nov 2023 21:30:49       T:72FFD640        .   .   .   SetFlagsMode: FLAGS_MODE_NORMAL
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        .   .   .   CConnectivitySupport::GetRouteForResource url=https://storefront.rku.net/Citrix/OTPAuth/resources/v2/subscriptions/Q29udHJvbGxlci4wMDEgcmt1LWl0IERlc2t0b3AgMjAxOSAkUzU3LTI0Mg-- timeoutSecs=30 cancellationEvent=false
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        .   .   .   {
+Thu  9 Nov 2023 21:30:49       T:72FFD640        .   .   .   .   Using receiver
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        .   .   .   .   CReceiverBase::GetConnectedVpnGatewayOrEmpty
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        .   .   .   .   {
+Thu  9 Nov 2023 21:30:49       T:72FFD640        .   .   .   .   .   Receiver status = 0x13
+Thu  9 Nov 2023 21:30:49 *WRN* T:72FFD640        .   .   .   .   .   Receiver API not implemented - defaulting to not active
+Thu  9 Nov 2023 21:30:49       T:72FFD640        .   .   .   .   .   vpnGateway=empty
+Thu  9 Nov 2023 21:30:49     < T:72FFD640        .   .   .   .   }
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        .   .   .   .   CReceiverBase::GetConnectivityForResource url='https://storefront.rku.net/Citrix/OTPAuth/resources/v2/subscriptions/Q29udHJvbGxlci4wMDEgcmt1LWl0IERlc2t0b3AgMjAxOSAkUzU3LTI0Mg--' timeoutSecs=29, cancellationEvent=false
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        .   .   .   .   {
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        .   .   .   .   .   CLinuxServiceRecordConnector::CallARGetNetworkLocationForStore url=https://storefront.rku.net/Citrix/OTPAuth/resources/v2/subscriptions/Q29udHJvbGxlci4wMDEgcmt1LWl0IERlc2t0b3AgMjAxOSAkUzU3LTI0Mg--
+Thu  9 Nov 2023 21:30:49     > T:72FFD640        .   .   .   .   .   {
+Thu  9 Nov 2023 21:30:49     < T:72FFD640        .   .   .   .   .   }
+Thu  9 Nov 2023 21:30:49       T:72FFD640        .   .   .   .   .   Receiver status = success
+Thu  9 Nov 2023 21:30:49       T:72FFD640        .   .   .   .   .   location=NETWORK_LOCATION_DECIDING
+Thu  9 Nov 2023 21:30:50     > T:72FFD640        .   .   .   .   .   CLinuxServiceRecordConnector::CallARGetNetworkLocationForStore url=https://storefront.rku.net/Citrix/OTPAuth/resources/v2/subscriptions/Q29udHJvbGxlci4wMDEgcmt1LWl0IERlc2t0b3AgMjAxOSAkUzU3LTI0Mg--
+Thu  9 Nov 2023 21:30:50     > T:72FFD640        .   .   .   .   .   {
+Thu  9 Nov 2023 21:30:50     < T:72FFD640        .   .   .   .   .   }
+Thu  9 Nov 2023 21:30:50       T:72FFD640        .   .   .   .   .   Receiver status = success
+Thu  9 Nov 2023 21:30:50       T:72FFD640        .   .   .   .   .   location=NETWORK_LOCATION_OUTSIDE
+Thu  9 Nov 2023 21:30:50       T:72FFD640        .   .   .   .   .   connectivity=CONNECTIVITY_GATEWAY
+Thu  9 Nov 2023 21:30:50     < T:72FFD640        .   .   .   .   }
+Thu  9 Nov 2023 21:30:50     > T:72FFD640        .   .   .   .   ReceiverBase::TryGetGatewayForResource
+Thu  9 Nov 2023 21:30:50     > T:72FFD640        .   .   .   .   {
+Thu  9 Nov 2023 21:30:50     > T:72FFD640        .   .   .   .   .   CLinuxServiceRecordConnector::CallGetCurrentGatewayForStore
+Thu  9 Nov 2023 21:30:50     > T:72FFD640        .   .   .   .   .   {
+Thu  9 Nov 2023 21:30:50     < T:72FFD640        .   .   .   .   .   }
+Thu  9 Nov 2023 21:30:50       T:72FFD640        .   .   .   .   .   Receiver status = 0x4
+Thu  9 Nov 2023 21:30:50       T:72FFD640        .   .   .   .   .   ReceiverBase::and url :
+Thu  9 Nov 2023 21:30:50       T:72FFD640        .   .   .   .   .   ReceiverBase::CreateGatewayResult url :
+Thu  9 Nov 2023 21:30:50       T:72FFD640        .   .   .   .   .   no gateway
+Thu  9 Nov 2023 21:30:50     < T:72FFD640        .   .   .   .   }
+Thu  9 Nov 2023 21:30:50 <<<<< T:72FFD640        .   .   .   .   Throwable created: CHttpException: Gateway connectivity was indicated, but the resource did not have an associated gateway; server URL: 'https://storefront.rku.net/Citrix/OTPAuth/resources/v2/subscriptions/Q29udHJvbGxlci4wMDEgcmt1LWl0IERlc2t0b3AgMjAxOSAkUzU3LTI0Mg--'
+Thu  9 Nov 2023 21:30:50     < T:72FFD640        .   .   .   }
+Thu  9 Nov 2023 21:30:50     > T:72FFD640        .   .   .   ConvertExceptionToAmResultOrRethrow
+Thu  9 Nov 2023 21:30:50     > T:72FFD640        .   .   .   {
+Thu  9 Nov 2023 21:30:50     > T:72FFD640        .   .   .   .   CAuthenticationContextError::ConvertExceptionToErrorCodeOrRethrow
+Thu  9 Nov 2023 21:30:50     > T:72FFD640        .   .   .   .   {
+Thu  9 Nov 2023 21:30:50       T:72FFD640        .   .   .   .   .   Processing exception, type='HTTP exception' description='Gateway connectivity was indicated, but the resource did not have an associated gateway; server URL: 'https://storefront.rku.net/Citrix/OTPAuth/resources/v2/subscriptions/Q29udHJvbGxlci4wMDEgcmt1LWl0IERlc2t0b3AgMjAxOSAkUzU3LTI0Mg--''
+Thu  9 Nov 2023 21:30:50 *LOG* T:72FFD640        .   .   .   .   .   Module: Citrix Authentication Manager
+Thu  9 Nov 2023 21:30:50 *LOG* T:72FFD640        .   .   .   .   .   Location: /opt/Citrix/ICAClient/AuthManagerDaemon
+Thu  9 Nov 2023 21:30:50 *LOG* T:72FFD640        .   .   .   .   .   Version: ...SF. (Release)
+Thu  9 Nov 2023 21:30:50 *LOG* T:72FFD640        .   .   .   .   .   Platform: Linux
+Thu  9 Nov 2023 21:30:50 *LOG* T:72FFD640        .   .   .   .   .   Description: There was a problem accessing the HTTP server.
+Thu  9 Nov 2023 21:30:50 *LOG* T:72FFD640        .   .   .   .   .   Exception type: HTTP exception
+Thu  9 Nov 2023 21:30:50 *LOG* T:72FFD640        .   .   .   .   .   Detail: Gateway connectivity was indicated, but the resource did not have an associated gateway; server URL: 'https://storefront.rku.net/Citrix/OTPAuth/resources/v2/subscriptions/Q29udHJvbGxlci4wMDEgcmt1LWl0IERlc2t0b3AgMjAxOSAkUzU3LTI0Mg--'
+Thu  9 Nov 2023 21:30:50 *LOG* T:72FFD640        .   .   .   .   .   Context:
+Thu  9 Nov 2023 21:30:50 *LOG* T:72FFD640        .   .   .   .   .   	CAuthHttpRequestImpl::SendAndReceive
+Thu  9 Nov 2023 21:30:50 *LOG* T:72FFD640        .   .   .   .   .   
+Thu  9 Nov 2023 21:30:50     < T:72FFD640        .   .   .   .   }
+Thu  9 Nov 2023 21:30:50       T:72FFD640        .   .   .   .   Returning AMResult: 0xfefb (authError='AuthContextError_NetworkError')
+Thu  9 Nov 2023 21:30:50     < T:72FFD640        .   .   .   }
+Thu  9 Nov 2023 21:30:50     < T:72FFD640        .   .   }
+Thu  9 Nov 2023 21:30:50     < T:72FFD640        .   }
+Thu  9 Nov 2023 21:30:50     < T:72FFD640        }
+Thu  9 Nov 2023 21:30:50     > T:72FFD640        LinuxAuthMan cancelAllCalls() client=LinuxClient object=authman#1
+Thu  9 Nov 2023 21:30:50     > T:72FFD640        {
+Thu  9 Nov 2023 21:30:50     > T:72FFD640        .   CAuthManImpl::CancelAllCalls
+Thu  9 Nov 2023 21:30:50     > T:72FFD640        .   {
+Thu  9 Nov 2023 21:30:50     < T:72FFD640        .   }
+Thu  9 Nov 2023 21:30:50     < T:72FFD640        }
+Thu  9 Nov 2023 21:30:50       T:72FFD640        Destroyed authman#1
+Thu  9 Nov 2023 21:30:50       T:72FFD640        Destroyed AuthHttpRequest#1
+Thu  9 Nov 2023 21:30:50     > T:72FFD640        LinuxAuthManSvr::uninitialize
+Thu  9 Nov 2023 21:30:50     > T:72FFD640        {
+Thu  9 Nov 2023 21:30:50     < T:72FFD640        }

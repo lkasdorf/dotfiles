@@ -1,0 +1,14 @@
+<StoreCache>
+	<DefaultStore>https://storefront.rku.net/citrix/otpauth/discovery</DefaultStore>
+	<ReconnectOnLogon>False</ReconnectOnLogon>
+	<ReconnectOnLaunchOrRefresh>False</ReconnectOnLaunchOrRefresh>
+	<SharedUserMode>False</SharedUserMode>
+	<FullscreenMode>0</FullscreenMode>
+	<SelfSelection>True</SelfSelection>
+	<SessionWindowedMode>False</SessionWindowedMode>
+	<VisibleStores>
+		<Store name="OTPAuth" type="DS" gatewaystore="" internalbeacon="" externalbeacon="" storeservice="OnPremStore">
+			https://storefront.rku.net/citrix/otpauth/discovery
+		</Store>
+	</VisibleStores>
+</StoreCache>
