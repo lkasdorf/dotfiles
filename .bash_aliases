@@ -124,8 +124,9 @@ alias rm='rm -i'
 alias st='speedtest-cli'
 alias wt='curl wttr.in'
 
+# Bare Repo Git
+alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
-alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 alias comnotes='git add -A && git commit -m "notes" && git push'
 
 alias grep='grep --color=auto'
