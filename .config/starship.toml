@@ -37,7 +37,7 @@ style = "bold blue"
 
 [cmd_duration]
 min_time = 10
-#show_milliseconds = false
+show_milliseconds = true
 disabled = false
 #style = "bold italic red"
 style = "yellow"
