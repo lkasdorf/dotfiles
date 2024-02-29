@@ -25,7 +25,7 @@ config push
 
 ## Installing dotfiles onto a new system (or migrate to this setup)
 
-Run Script /scripts/dotfiles-install/dotfiles-install.sh
+### Run Script /scripts/dotfiles-install/dotfiles-install.sh
 
 ```bash
 #!/bin/bash
@@ -45,7 +45,7 @@ fi;
 config checkout
 config config status.showUntrackedFiles > no
 ```
-Create alias for git
+### Create alias for git
 
 ```bash
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
