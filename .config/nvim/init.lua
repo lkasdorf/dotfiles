@@ -573,3 +573,4 @@ require("aerial").setup({
 })
 
 vim.cmd[[colorscheme synthwave84]]
+

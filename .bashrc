@@ -3,7 +3,7 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
-source ~/.bash_prompt
+#source ~/.bash_prompt
 source ~/.bash_ssh
 
 export PATH="/var/lib/flatpak/exports/bin:/~/.local/share/flatpak/exports/bin:/opt:$PATH"
