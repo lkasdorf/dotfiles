@@ -1,9 +1,6 @@
 # mousemode
 set -g mouse on
 
-# vim key binding for copymode
-setw -g mode-keys vi
-
 # use-C-j and C-f for the prefix
 set-option -g prefix C-j
 set-option -g prefix2 C-f
