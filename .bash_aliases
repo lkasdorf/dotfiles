@@ -145,3 +145,20 @@ alias tl='trans'
 
 # bat
 alias cat='bat'
+
+# Create directories and cd into it
+function take {
+    mkdir -p $1
+    cd $1
+}
+
+# source config file
+alias s='source ~/.bashrc'
+
+# quick notes
+function note {
+    echo "date: $(date)" >> $HOME/Documents/notes/myNotes/drafts.md
+    echo "$@" >> $HOME/Documents/notes/myNotes/drafts.md
+    echo "" >> $HOME/Documents/notes/myNotes/drafts.md
+}
+ 
