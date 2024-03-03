@@ -28,9 +28,13 @@
 
 #ls
 alias ls='eza -al --color=always --group-directories-first' # my preferred listing
+alias lsi='eza -al --color=always --icons=always --group-directories-first' # my preferred listing
 alias la='eza -a --color=always --group-directories-first' # all files and dirs
+alias lai='eza -a --color=always --icons=always --group-directories-first' # all files and dirs
 alias ll='eza -l --color=always --group-directories-first' # long format
+alias lli='eza -l --color=always --icons=always --group-directories-first' # long format
 alias lt='eza -aT --color=always --group-directories-first' # tree listing
+alias lti='eza -aT --color=always --icons=always --group-directories-first' # tree listing
 alias l.='eza -a | egrep "^\."'
 
 ## get rid of command not found ##
