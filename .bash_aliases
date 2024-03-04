@@ -161,4 +161,6 @@ function note {
     echo "$@" >> $HOME/Documents/notes/myNotes/drafts.md
     echo "" >> $HOME/Documents/notes/myNotes/drafts.md
 }
- 
+
+# ping count 10
+alias ping='ping -c 10'
