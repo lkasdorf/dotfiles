@@ -164,3 +164,6 @@ function note {
 
 # ping count 10
 alias ping='ping -c 10'
+
+# bc calculator
+alias bc='bc --mathlib'
