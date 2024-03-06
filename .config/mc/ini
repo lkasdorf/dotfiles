@@ -87,7 +87,7 @@ skin=xoria256
 
 [Layout]
 output_lines=0
-left_panel_size=90
+left_panel_size=119
 top_panel_size=0
 message_visible=true
 keybar_visible=true
@@ -115,6 +115,8 @@ clipboard_paste=
 base_color=
 xterm-256color=
 color_terminals=
+
+tmux-256color=
 
 [Panels]
 show_mini_info=true
