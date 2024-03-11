@@ -21,7 +21,7 @@ audio_codec=mp2
 #profile name
 profile_name=default.gpfl
 #profile path
-profile_path=~/.config/guvcview2
+profile_path=/home/leon/.config/guvcview2
 #video name
 video_name=my_video.mkv
 #video path
