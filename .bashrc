@@ -179,4 +179,3 @@ eval "$(starship init bash)"
 [[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
 eval "$(atuin init bash)"
 
-[ -f /home/leon/.tbmk/.bash ] && source /home/leon/.tbmk/.bash
