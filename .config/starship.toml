@@ -13,7 +13,7 @@ show_always = true
 
 [hostname]
 ssh_only = false
-format = 'on [$hostname](green) '
+format = 'on [$hostname](#6E94AB) '
 trim_at = "."
 disabled = false
 
