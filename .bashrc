@@ -6,7 +6,7 @@
 #source ~/.bash_prompt
 source ~/.bash_ssh
 
-export PATH="/var/lib/flatpak/exports/bin:/~/.local/share/flatpak/exports/bin:/opt:$PATH"
+export PATH="/home/leon/.cargo/bin:/var/lib/flatpak/exports/bin:/~/.local/share/flatpak/exports/bin:/opt:$PATH"
 
 # If not running interactively, don't do anything
 case $- in
