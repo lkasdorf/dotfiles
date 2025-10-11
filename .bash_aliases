@@ -170,3 +170,4 @@ alias bc='bc --mathlib'
 
 alias archbox='distrobox enter archbox'
 alias fedorabox='distrobox enter fedorabox'
+alias ubuntubox='distrobox enter ubuntubox'

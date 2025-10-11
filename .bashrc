@@ -7,7 +7,7 @@
 source ~/.bash_ssh
 
 export PATH="/home/leon/.cargo/bin:/var/lib/flatpak/exports/bin:/~/.local/share/flatpak/exports/bin:/opt:$PATH"
-
+export PATH="/home/leon/.local/bin:$PATH"
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -182,3 +182,4 @@ eval "$(atuin init bash)"
 . "$HOME/.cargo/env"
 eval "$(atuin init bash)"
 [[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
+export PATH="$HOME/.local/bin:$PATH"
