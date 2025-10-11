@@ -179,7 +179,9 @@ eval "$(starship init bash)"
 [[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
 eval "$(atuin init bash)"
 
-. "$HOME/.cargo/env"
+[ -f "$HOME/.cargo/env" ] && source "$HOME/.cargo/env"
+
+#. "$HOME/.cargo/env"
 eval "$(atuin init bash)"
 [[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
 export PATH="$HOME/.local/bin:$PATH"
