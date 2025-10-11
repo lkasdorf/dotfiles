@@ -1,0 +1,31 @@
+name: Sync README to Root
+on:
+  push:
+    paths:
+      - 'dotfiles_docs/README.md'
+      - '.github/workflows/sync-readme.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Copy README from docs to root
+        run: |
+          cp dotfiles_docs/README.md README.md
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: "docs: sync README from dotfiles_docs to root"
+          title: "docs: sync README to root"
+          body: "Automated sync from dotfiles_docs/README.md"
+          branch: docs/sync-readme
+          delete-branch: true
