@@ -12,6 +12,19 @@ vim.notify = function(msg, level, opts)
   _notify(msg, level, opts)
 end
 
+-- nur die lspconfig-"framework is deprecated"-Warnung ausblenden
+local _notify = vim.notify
+vim.notify = function(msg, level, opts)
+  if type(msg) == "string" then
+    local m = msg:lower()
+    if m:find("lspconfig") and m:find("framework") and m:find("deprecated") then
+      return
+    end
+  end
+  _notify(msg, level, opts)
+end
+
+
 require('keymaps')
 
 -- Leader keys (must be set before plugins)
