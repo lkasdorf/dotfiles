@@ -2,27 +2,27 @@
 -- Leon Kasdorf – Neovim config (Kickstart-based, with fixes applied)
 -- ===================================================================
 
--- Optional: hide the noisy lspconfig deprecation warning only (keep others)
-local _notify = vim.notify
-vim.notify = function(msg, level, opts)
-  if type(msg) == "string"
-     and msg:find("require%('lspconfig'%)%s*\"framework\"%s*is%s*deprecated") then
-    return
-  end
-  _notify(msg, level, opts)
+-- ── Silence only the lspconfig "framework is deprecated" message ──────────────
+local function _is_lspconfig_depr(msg)
+  if type(msg) ~= "string" then return false end
+  local m = msg:lower()
+  return m:find("lspconfig") and m:find("framework") and m:find("deprecated")
 end
 
--- nur die lspconfig-"framework is deprecated"-Warnung ausblenden
-local _notify = vim.notify
+local _notify      = vim.notify
+local _notify_once = vim.notify_once
+
 vim.notify = function(msg, level, opts)
-  if type(msg) == "string" then
-    local m = msg:lower()
-    if m:find("lspconfig") and m:find("framework") and m:find("deprecated") then
-      return
-    end
-  end
-  _notify(msg, level, opts)
+  if _is_lspconfig_depr(msg) then return end
+  return _notify(msg, level, opts)
 end
+
+vim.notify_once = function(msg, level, opts)
+  if _is_lspconfig_depr(msg) then return end
+  return _notify_once(msg, level, opts)
+end
+-- ──────────────────────────────────────────────────────────────────────────────
+
 
 
 require('keymaps')
