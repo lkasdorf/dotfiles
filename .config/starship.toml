@@ -1,9 +1,24 @@
-#format = """
-#[╭─user───❯](bold blue) $username
-#[┣─system─❯](bold yellow) $hostname
-#[┣─project❯](bold red) $directory$rust$git_branch$git_state$git_status$package$golang$terraform$docker_context$python$docker_context$nodejs
-#[╰─cmd────❯](bold green)
-#"""
+# ------------------------------------------------------------
+# Starship config (optimized, based on your current file)
+# ------------------------------------------------------------
+
+# Your multi-line prompt layout (enabled)
+# format = """
+# [╭─user───❯](bold blue) $username
+# [┣─system─❯](bold yellow) $hostname
+# [┣─project❯](bold red) $directory$rust$git_branch$git_state$git_status$package$golang$terraform$docker_context$python$nodejs
+# [╰─cmd────❯](bold green) $cmd_duration$status
+# $character
+# """
+
+format = "$username$hostname$directory$git_branch$git_state$git_status$rust$golang$terraform$docker_context$python$nodejs$cmd_duration$status$character"
+add_newline = false
+
+command_timeout = 800
+
+# ------------------------------------------------------------
+# Identity
+# ------------------------------------------------------------
 [username]
 style_user = "blue bold"
 style_root = "red bold"
@@ -12,36 +27,47 @@ disabled = false
 show_always = true
 
 [hostname]
-ssh_only = false
-format = 'on [$hostname](#6E94AB) '
+ssh_only = true
+format = "on [$hostname](#6E94AB) "
 trim_at = "."
 disabled = false
 
-# Replace the "❯" symbol in the prompt with "➜"
-#[character]                            # The name of the module we are configuring is "character"
-#success_symbol = "[➜](bold green)"     # The "success_symbol" segment is being set to "➜" with the color "bold green"
-#error_symbol = "[✗](bold red)"
-
+# ------------------------------------------------------------
+# Prompt character
+# ------------------------------------------------------------
 [character]
 success_symbol = "[❯](blue)"
 error_symbol = "[❯](red)"
-vicmd_symbol = "[❮](green)"
+vicmd_symbol = "[❮](blue)"
 
-#  
-# configure directory
+# ------------------------------------------------------------
+# Directory
+# ------------------------------------------------------------
 [directory]
-read_only = "  " 
-truncation_length = 10
-truncate_to_repo = true # truncates directory to root folder if in github repo
+read_only = "  "
+truncation_length = 4
+truncate_to_repo = true
 style = "bold blue"
 
+# ------------------------------------------------------------
+# Duration + exit status
+# ------------------------------------------------------------
 [cmd_duration]
-min_time = 10
+# 10ms is basically everything; this becomes noise fast.
+# 500ms is a sweet spot; adjust to taste (300–1000ms).
+min_time = 800
 show_milliseconds = false
 disabled = false
-#style = "bold italic red"
 style = "yellow"
+format = "took [$duration]($style) "
 
+[status]
+disabled = false
+format = "exit [$status](bold red) "
+
+# ------------------------------------------------------------
+# Common symbols (keep your style)
+# ------------------------------------------------------------
 [aws]
 symbol = "  "
 
@@ -51,48 +77,11 @@ symbol = " "
 [dart]
 symbol = " "
 
-#[directory]
-#read_only = " "
-
-[docker_context]
-symbol = " "
-format = "via [$symbol$context]($style) "
-style = "blue bold"
-only_with_files = true
-detect_files = ["docker-compose.yml", "docker-compose.yaml", "Dockerfile"]
-detect_folders = []
-disabled = false
-
 [elixir]
 symbol = " "
 
 [elm]
 symbol = " "
-
-[git_branch]
-symbol = " "
-
-[git_status]
-format = '([\[$all_status$ahead_behind\]]($style) )'
-stashed = "[${count}*](green)" 
-modified = "[${count}+](yellow)" 
-deleted =  "[${count}-](red)" 
-conflicted =  "[${count}~](red)" 
-ahead = "⇡${count}"
-behind = "⇣${count}"
-untracked = "[${count}?](blue)" 
-staged = "[${count}+](green)" 
-
-[git_state]
-style =	"bold red"
-format = "[$state( $progress_current/$progress_total) ]($style)"
-rebase = "rebase"
-merge = "merge"	
-revert = "revert"	
-cherry_pick = "cherry"
-bisect = "bisect"	
-am = "am"	
-am_or_rebase = "am/rebase"
 
 [golang]
 symbol = " "
@@ -120,22 +109,14 @@ symbol = " "
 
 [package]
 symbol = " "
+# reduce noise: show package only when it matters
+display_private = false
 
 [perl]
 symbol = " "
 
 [php]
 symbol = " "
-
-[python]
-symbol = "🐍 "
-#pyenv_version_name = true
-format = 'via [${symbol}python (${version} )(\($virtualenv\) )]($style)'
-style = "bold yellow"
-pyenv_prefix = "venv "
-python_binary = ["./venv/bin/python", "python", "python3", "python2"]
-detect_extensions = ["py"]
-version_format = "v${raw}"
 
 [ruby]
 symbol = " "
@@ -148,13 +129,73 @@ symbol = " "
 
 [shlvl]
 symbol = " "
+# keep it off unless you really need nested shell depth:
+disabled = true
 
 [swift]
 symbol = "ﯣ "
 
+# ------------------------------------------------------------
+# Docker
+# ------------------------------------------------------------
+[docker_context]
+symbol = " "
+format = "via [$symbol$context]($style) "
+style = "blue bold"
+only_with_files = true
+detect_files = ["docker-compose.yml", "docker-compose.yaml", "Dockerfile"]
+detect_folders = []
+disabled = false
+
+# ------------------------------------------------------------
+# Git
+# ------------------------------------------------------------
+[git_branch]
+symbol = " "
+format = "on [$symbol$branch]($style) "
+style = "bold"
+
+[git_status]
+# keep your bracketed style, but make it reliable & not too wide
+format = "([\\[$all_status$ahead_behind\\]]($style) )"
+stashed = "[${count}*](green)"
+modified = "[${count}+](yellow)"
+deleted = "[${count}-](red)"
+conflicted = "[${count}~](red)"
+ahead = "⇡${count}"
+behind = "⇣${count}"
+untracked = "[${count}?](blue)"
+staged = "[${count}+](green)"
+
+[git_state]
+style = "bold red"
+format = "[$state( $progress_current/$progress_total) ]($style)"
+rebase = "rebase"
+merge = "merge"
+revert = "revert"
+cherry_pick = "cherry"
+bisect = "bisect"
+am = "am"
+am_or_rebase = "am/rebase"
+
+# ------------------------------------------------------------
+# Python
+# ------------------------------------------------------------
+[python]
+symbol = "🐍 "
+format = "via [${symbol}python ${version} (\\($virtualenv\\) )]($style)"
+style = "bold yellow"
+pyenv_prefix = "venv "
+python_binary = ["./venv/bin/python", "python", "python3", "python2"]
+detect_extensions = ["py"]
+version_format = "v${raw}"
+
+# ------------------------------------------------------------
+# Node.js
+# ------------------------------------------------------------
 [nodejs]
+# Your format is cool; keep it. But detection via node_modules is noisy.
 format = "via [ Node.js $version](bold green) "
-detect_files = ["package.json", ".node-version"]
-detect_folders = ["node_modules"]
-
-
+detect_files = ["package.json", ".node-version", ".nvmrc", "pnpm-lock.yaml", "yarn.lock", "package-lock.json"]
+detect_folders = []   # avoid always triggering in big repos
+disabled = false
