@@ -6,8 +6,8 @@
 #source ~/.bash_prompt
 source ~/.bash_ssh
 
-export PATH="/home/leon/.cargo/bin:/var/lib/flatpak/exports/bin:/~/.local/share/flatpak/exports/bin:/opt:$PATH"
-export PATH="/home/leon/.local/bin:$PATH"
+export PATH="$HOME/.cargo/bin:/var/lib/flatpak/exports/bin:/~/.local/share/flatpak/exports/bin:/opt:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -193,11 +193,34 @@ eval "$(starship init bash)"
 
 [[ -f "$HOME/.cargo/env" ]] && source "$HOME/.cargo/env"
 
-. "$HOME/.atuin/bin/env"
+#. "$HOME/.atuin/bin/env"
 
 #. "$HOME/.cargo/env"
-eval "$(atuin init bash)"
-[[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
+#eval "$(atuin init bash)"
+#[[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
+#export PATH="$HOME/.local/bin:$PATH"
+
+#eval "$(zoxide init --cmd cd bash)"
+
+# Cargo
+[[ -f "$HOME/.cargo/env" ]] && source "$HOME/.cargo/env"
+
+# Atuin
+if [ -f "$HOME/.atuin/bin/env" ]; then
+    . "$HOME/.atuin/bin/env"
+fi
+
+if command -v atuin >/dev/null 2>&1; then
+    eval "$(atuin init bash)"
+fi
+
+# Bash preexec
+[[ -f "$HOME/.bash-preexec.sh" ]] && source "$HOME/.bash-preexec.sh"
+
+# Local bin
 export PATH="$HOME/.local/bin:$PATH"
 
-eval "$(zoxide init --cmd cd bash)"
+# Zoxide
+if command -v zoxide >/dev/null 2>&1; then
+    eval "$(zoxide init --cmd cd bash)"
+fi
