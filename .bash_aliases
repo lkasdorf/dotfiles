@@ -6,13 +6,14 @@
 
 # My personal notes, call TODO.md
 #    alias tn='cd ~/DRIVE/SynologyDrive/notes && nvim ~/DRIVE/SynologyDrive/notes/TODO.md'
-    alias todo='cd ~/Documents/notes/myNotes && nvim ~/Documents/notes/myNotes/TODO.md'
+#    alias todo='cd ~/Documents/notes/myNotes && nvim ~/Documents/notes/myNotes/TODO.md'
 
 # Open the notes Directory
-    alias notes='cd ~/DRIVE/SynologyDrive/notes'
+    alias notes='cd /mnt/c/Users/LeonKasdorf/Documents/myNotes'
 
     alias ..='cd ..'
-    alias upgrade='sudo nala upgrade'
+#    alias upgrade='sudo nala upgrade'
+    alias upgrade='sudo pacman -Syu'
     alias c='clear'
 
     alias h='cd ~ && clear'
@@ -168,6 +169,6 @@ alias ping='ping -c 10'
 # bc calculator
 alias bc='bc --mathlib'
 
-alias archbox='distrobox enter archbox'
-alias fedorabox='distrobox enter fedorabox'
-alias ubuntubox='distrobox enter ubuntubox'
+# alias archbox='distrobox enter archbox'
+# alias fedorabox='distrobox enter fedorabox'
+# alias ubuntubox='distrobox enter ubuntubox'

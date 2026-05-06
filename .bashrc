@@ -97,7 +97,7 @@ if [ -x /usr/bin/dircolors ]; then
 
 fi
 
-### ARCHIVE 
+### ARCHIVE
 
 ex () {
 if [ -f $1 ] ; then
@@ -133,7 +133,7 @@ function cs() { curl -m 7 "http://cheat.sh/$1"; }
 
 srccmd() {
     compgen -c | sort | fzf --preview 'man {}' --preview-window 'right:60%:wrap' | xargs man
-} 
+}
 
 srcman() {
     local man_page
@@ -181,11 +181,14 @@ fi
 eval "$(starship init bash)"
 
 [[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
-eval "$(atuin init bash)"
 
 [[ -f "$HOME/.cargo/env" ]] && source "$HOME/.cargo/env"
+
+. "$HOME/.atuin/bin/env"
 
 #. "$HOME/.cargo/env"
 eval "$(atuin init bash)"
 [[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
 export PATH="$HOME/.local/bin:$PATH"
+
+eval "$(zoxide init --cmd cd bash)"
