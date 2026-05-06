@@ -31,6 +31,15 @@ shopt -s histappend
 #  tmux attach -t main || tmux new -s main
 #fi
 
+
+# Auto-start tmux only in WSL, not over SSH and not inside tmux
+if command -v tmux >/dev/null 2>&1 \
+    && grep -qi microsoft /proc/version \
+    && [ -z "$SSH_CONNECTION" ] \
+    && [ -z "$TMUX" ]; then
+   tmux attach -t main || tmux new -s main
+fi 
+
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
 HISTSIZE=10000
 HISTFILESIZE=20000
