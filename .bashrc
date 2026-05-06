@@ -27,6 +27,10 @@ HISTTIMEFORMAT="%Y-%m-%d %T "
 # append to the history file, don't overwrite it
 shopt -s histappend
 
+if command -v tmux >/dev/null 2>&1 && [ -z "$TMUX" ]; then
+  tmux attach -t main || tmux new -s main
+fi
+
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
 HISTSIZE=10000
 HISTFILESIZE=20000
