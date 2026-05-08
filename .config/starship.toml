@@ -15,6 +15,7 @@ format = "$username$hostname$directory$git_branch$git_state$git_status$rust$gola
 add_newline = false
 
 command_timeout = 800
+scan_timeout = 1000
 
 # ------------------------------------------------------------
 # Identity
