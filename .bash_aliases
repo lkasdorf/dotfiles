@@ -145,7 +145,14 @@ alias yt='yt-dlp -4 -o "~/YTDL/%(title)s by %(uploader)s on %(upload_date)s" -f 
 alias tl='trans'
 
 # bat
-alias cat='bat'
+#alias cat='bat'
+
+# Optional: cat nur ersetzen, wenn bat/batcat vorhanden ist
+if command -v bat >/dev/null 2>&1; then
+  alias cat='bat'
+elif command -v batcat >/dev/null 2>&1; then
+  alias cat='batcat'
+fi
 
 # Create directories and cd into it
 function take {
