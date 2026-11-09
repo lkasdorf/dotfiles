@@ -12,8 +12,22 @@
     alias notes='cd /mnt/c/Users/LeonKasdorf/Documents/myNotes'
 
     alias ..='cd ..'
-#    alias upgrade='sudo nala upgrade'
-    alias upgrade='sudo pacman -Syu'
+# System upgrade with whichever package manager this machine has
+upgrade() {
+    if command -v nala >/dev/null 2>&1; then sudo nala upgrade
+    elif command -v apt-get >/dev/null 2>&1; then sudo apt-get update && sudo apt-get full-upgrade
+    elif command -v pacman >/dev/null 2>&1; then
+        if command -v paru >/dev/null 2>&1; then paru -Syu
+        elif command -v yay >/dev/null 2>&1; then yay -Syu
+        else sudo pacman -Syu
+        fi
+    elif command -v dnf >/dev/null 2>&1; then sudo dnf upgrade --refresh
+    elif command -v zypper >/dev/null 2>&1; then sudo zypper update
+    elif command -v apk >/dev/null 2>&1; then sudo apk upgrade --update-cache
+    elif command -v xbps-install >/dev/null 2>&1; then sudo xbps-install -Su
+    else echo "upgrade: kein bekannter Paketmanager gefunden" >&2; return 1
+    fi
+}
     alias c='clear'
 
     alias h='cd ~ && clear'
@@ -28,6 +42,7 @@
 #alias tree='exa --tree'
 
 #ls
+if command -v eza >/dev/null 2>&1; then
 alias ls='eza -al --color=always --group-directories-first' # my preferred listing
 alias lsi='eza -al --color=always --icons=auto --group-directories-first' # my preferred listing
 alias la='eza -a --color=always --group-directories-first' # all files and dirs
@@ -36,7 +51,14 @@ alias ll='eza -l --color=always --group-directories-first' # long format
 alias lli='eza -l --color=always --icons=auto --group-directories-first' # long format
 alias lt='eza -aT --color=always --group-directories-first' # tree listing
 alias lti='eza -aT --color=always --icons=auto --group-directories-first' # tree listing
-alias l.='eza -a | egrep "^\."'
+alias l.='eza -a | grep -E "^\."'
+else
+# Fallback without eza
+alias ls='ls -alh --color=auto --group-directories-first'
+alias la='ls -A --color=auto --group-directories-first'
+alias ll='ls -lh --color=auto --group-directories-first'
+alias l.='ls -d .* --color=auto'
+fi
 
 ## get rid of command not found ##
 alias cd..='cd ..'
@@ -50,8 +72,8 @@ alias .5='cd ../../../../..'
 
 ## alias for apt
 
-alias apt='sudo apt'
-alias nala='sudo nala'
+command -v apt >/dev/null 2>&1 && alias apt='sudo apt'
+command -v nala >/dev/null 2>&1 && alias nala='sudo nala'
 
 ## alias for updatedb
 
@@ -130,13 +152,13 @@ alias st='speedtest-cli'
 alias wt='curl wttr.in'
 
 # Bare Repo Git
-alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias config='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 alias comnotes='git add -A && git commit -m "notes" && git push'
 
 alias grep='grep --color=auto'
-alias fgrep='fgrep --color=auto'
-alias egrep='egrep --color=auto'
+alias fgrep='grep -F --color=auto'
+alias egrep='grep -E --color=auto'
 
 alias ytbest='yt-dlp -4 -o "~/YTDL/%(title)s by %(uploader)s on %(upload_date)s" -f "bv+ba/b"'
 alias yt='yt-dlp -4 -o "~/YTDL/%(title)s by %(uploader)s on %(upload_date)s" -f -'

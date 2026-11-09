@@ -1,12 +1,11 @@
-#TEST
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
 #source ~/.bash_prompt
-source ~/.bash_ssh
+[[ -f ~/.bash_ssh ]] && source ~/.bash_ssh
 
-export PATH="$HOME/.cargo/bin:/var/lib/flatpak/exports/bin:/~/.local/share/flatpak/exports/bin:/opt:$PATH"
+export PATH="$HOME/.cargo/bin:/var/lib/flatpak/exports/bin:$HOME/.local/share/flatpak/exports/bin:/opt:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 # If not running interactively, don't do anything
 case $- in
@@ -16,7 +15,12 @@ esac
 
 # Vim as manpager Reader
 # export MANPAGER="nvim +Man!"
-export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+# bat as man pager; Debian and Ubuntu name it batcat
+if command -v bat >/dev/null 2>&1; then
+    export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+elif command -v batcat >/dev/null 2>&1; then
+    export MANPAGER="sh -c 'col -bx | batcat -l man -p'"
+fi
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
@@ -53,7 +57,12 @@ shopt -s checkwinsize
 #shopt -s globstar
 
 # make less more friendly for non-text input files, see lesspipe(1)
-[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
+# (lesspipe on Debian/Ubuntu, lesspipe.sh on Arch, Fedora and openSUSE)
+if [ -x /usr/bin/lesspipe ]; then
+    eval "$(SHELL=/bin/sh lesspipe)"
+elif command -v lesspipe.sh >/dev/null 2>&1; then
+    export LESSOPEN="| lesspipe.sh %s"
+fi
 
 # set variable identifying the chroot you work in (used in the prompt below)
 if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
@@ -187,38 +196,28 @@ fi
 #neofetch
 #tmux
 
-eval "$(starship init bash)"
-
-[[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
-
-[[ -f "$HOME/.cargo/env" ]] && source "$HOME/.cargo/env"
-
-#. "$HOME/.atuin/bin/env"
-
-#. "$HOME/.cargo/env"
-#eval "$(atuin init bash)"
-#[[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
-#export PATH="$HOME/.local/bin:$PATH"
-
-#eval "$(zoxide init --cmd cd bash)"
-
 # Cargo
-[[ -f "$HOME/.cargo/env" ]] && source "$HOME/.cargo/env"
-
-# Atuin
-if [ -f "$HOME/.atuin/bin/env" ]; then
-    . "$HOME/.atuin/bin/env"
+if [[ -f "$HOME/.cargo/env" ]]; then
+    source "$HOME/.cargo/env"
 fi
 
+# Starship prompt
+if command -v starship >/dev/null 2>&1; then
+    eval "$(starship init bash)"
+fi
+
+# Bash preexec (used by atuin and starship)
+if [[ -f "$HOME/.bash-preexec.sh" ]]; then
+    source "$HOME/.bash-preexec.sh"
+fi
+
+# Atuin
+if [[ -f "$HOME/.atuin/bin/env" ]]; then
+    . "$HOME/.atuin/bin/env"
+fi
 if command -v atuin >/dev/null 2>&1; then
     eval "$(atuin init bash)"
 fi
-
-# Bash preexec
-[[ -f "$HOME/.bash-preexec.sh" ]] && source "$HOME/.bash-preexec.sh"
-
-# Local bin
-export PATH="$HOME/.local/bin:$PATH"
 
 # Zoxide
 if command -v zoxide >/dev/null 2>&1; then

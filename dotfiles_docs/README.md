@@ -19,14 +19,31 @@ curl -fsSL https://raw.githubusercontent.com/lkasdorf/dotfiles/main/scripts/inst
 bash -s -- --ssh
 ```
 
+On a machine without a GitHub SSH key yet (fresh VM, WSL), use `--https`: it fetches over HTTPS
+and keeps SSH as the push URL, so `config push` works as soon as a key is added:
+```bash
+curl -fsSL https://raw.githubusercontent.com/lkasdorf/dotfiles/main/scripts/install_dotfiles_2025.sh |
+bash -s -- --https --with-tools
+```
+
+The script can be run again at any time to update the checkout. It refuses to run when the local
+branch has commits that are not on GitHub yet, so nothing gets lost.
+
 ### What the Script Does
 
 - Initializes a **bare Git repository** under `~/.dotfiles`
 - Connects it automatically to GitHub (`git@github.com:lkasdorf/dotfiles.git`)
-- Checks out your tracked files into `$HOME`
-- Creates or updates `~/.bash_ssh` (with automatic backup)
-- Optionally installs **Starship** (prompt) and **Eza** (modern `ls`)
-- Works out of the box on **Debian/Ubuntu/Mint/Zorin**, **Fedora**, and **Arch-based** systems
+- Backs up every file it would overwrite to `~/.dotfiles-backup-YYYYMMDD-HHMMSS/`
+- Checks out your tracked files into `$HOME` on a real `main` branch that tracks `origin/main`
+- Creates `~/.bash_ssh` if it does not exist yet (an existing one is left alone)
+- Optionally installs **Starship** (prompt) and **Eza** (modern `ls`), with `--with-tools` also **bat**, **fzf** and **zoxide**
+- Links `batcat` to `bat` and `fdfind` to `fd` in `~/.local/bin` (Debian and Ubuntu package names)
+- Works on any distribution: it uses whichever package manager it finds (`apt-get`, `dnf`, `yum`,
+  `pacman`, `zypper`, `apk`, `xbps-install`, `eopkg`, `brew`). If a tool is not packaged, Starship and
+  eza fall back to their official binaries in `~/.local/bin`; without sudo only these fallbacks are used.
+
+The shell config itself is distribution-neutral as well: every tool (starship, atuin, zoxide, eza,
+bat) is only loaded when it is installed, and `upgrade` calls the package manager of the machine.
 
 ---
 
@@ -144,8 +161,8 @@ config push
 
 ## 🧰 `.bash_ssh` File
 
-During installation, the script automatically creates `~/.bash_ssh`  
-and backs up any existing version as `.bash_ssh.backup-YYYYMMDD-HHMMSS`.
+During installation, the script creates `~/.bash_ssh` if it is missing.
+An existing file is machine specific and stays untouched.
 
 **Default template:**
 ```bash
